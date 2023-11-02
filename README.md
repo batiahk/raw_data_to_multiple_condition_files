@@ -1,5 +1,5 @@
 # raw_data_to_multiple_condition_files
-creating multiple condition files for statistic analysis from experimental raw data
+Creating multiple_conditions files for statistic analysis of fMRI data in SPM 
 
 1) Parse raw data in experiment output files (run1, run2 and run3)
 2) Find subject codes (ID)
