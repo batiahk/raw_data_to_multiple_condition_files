@@ -5,20 +5,19 @@
 clear all 
 
 % Specify the directory containing AZK files
-azk_directory = '/home/batiah/dyslexia_morphology_thesis/experiment_logs_allruns';
+azk_directory = ' '; % enter relevant directory
 
 % List of AZK files in the current directory
 azk_files = dir(fullfile(azk_directory, '*.azk'));  % Use fullfile to specify the full path
 
-% map typos to corrected subject code
+% map typos to corrected subject code - enter map of relevant typos and corrections
 subject_mapping = containers.Map({
-    'subject 17', 'TAMA9561', 'HAAM1204', 'NOEP4037', 'ASMA7669'}, {
-    'MAKA7424', 'TAKA9561', 'AGAM1204' , 'NOAP4037', 'OSMA7669'
+    'relevant incorrect subject names'}, {'relevant correct subject names'
 });
 
 % map subject codes to serial code
 serial_mapping = containers.Map({
-    'MOKE2256', 'NASH7723', 'SODI9399', 'TAKA9561', 'YACO9137', 'RORE4846', 'RAHA6432', 'SHMI3336', 'SAOD0525', 'TEBI3421', 'YOBU3279', 'MAKA7424', 'ROLE7127', 'SAKA4051', 'ALHA4472', 'OSMA7669', 'LIDO2337', 'YOAM4335', 'DABR1519', 'NOFL8002', 'ADFI6088', 'IDGA3388', 'RAPO4209', 'LISH1744', 'AGAM1204', 'BEFA2110', 'YAHA3451', 'NIRO8138', 'NOAP4037', 'ROCO7943', 'KEFR7018', 'SHGE8152', 'YOCO4919', 'MASE7392', 'ABBE9810', 'DAGR3081', 'DASH8783', 'SHGO2546', 'AYSA8325'
+    'relevant subject codes'
 }, {
     'sub01', 'sub02', 'sub03', 'sub04', 'sub05', 'sub06', 'sub07', 'sub08', 'sub09', 'sub10', 'sub11', 'sub12', 'sub13', 'sub14', 'sub15', 'sub16', 'sub17', 'sub18', 'sub19', 'sub20', 'sub21', 'sub22', 'sub23', 'sub24', 'sub25', 'sub26', 'sub27', 'sub28', 'sub29', 'sub30', 'sub31', 'sub32', 'sub33', 'sub34', 'sub35', 'sub36', 'sub37', 'sub38', 'sub39'
 });
@@ -29,7 +28,7 @@ serial_mapping = containers.Map({
 condition_mapping = containers.Map({
     '11','12','13','14','15','3'
     }, {
-    'Identical','Root','Letter','Unrelated','Symbols','Question'
+    'condition1','condition2','condition3','condition4','condition5','Question'
     });
 
 %%%%%%%% End of mappings %%%%%%%
